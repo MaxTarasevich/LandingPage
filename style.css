@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+/*Header*/
+
+.header{
+    max-width: 1440px;
+}
+.header-menu{
+    display: flex;
+}
+.header-menu_list{
+    display: flex;
+}
+/*Header*/
