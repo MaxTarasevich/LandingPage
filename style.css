@@ -16,7 +16,11 @@
  src: url("/fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2"),
         url("/fonts/Open_Sans/OpenSans-SemiBold.woff") format("woff");
 }
-
+@font-face{
+    font-family: "Roboto Regular";
+ src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+        url("/fonts/Roboto-Regular.woff") format("woff");
+}
 
 
 
@@ -34,8 +38,11 @@ a{
     text-decoration: none;
     color: inherit;
 }
-h1 h2{
+section h2{
     font-family: "MarketDeko";
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1em 0 1em;
 }
 
 ul{
@@ -47,10 +54,11 @@ ul{
 .header{
     max-width: 1440px;  
     background-image: url(/img/Header-bg.jpg);
-    background-position: center;
+    background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    margin: 0 auto;
 }
 .header-menu{
     display: flex;
@@ -77,7 +85,7 @@ ul{
 .header-seach{
     display:inline-block;
     width: 65%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     letter-spacing: 0.5px;
     line-height: 1.5;
@@ -97,22 +105,16 @@ ul{
 
 .main-container{
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 
 /*first-section*/
 
 .first-section{
-   width: 89%;
-   margin: 0 auto;
-   position: relative;
-   top:-100px;
+   width: 90%;
+   margin: -9rem auto 0;
    background-color:white;
-   z-index: 2;
-}
-.first-section h2{
-    text-align: center;
-    font-size: 2.5rem;
 }
 .first-section figure{
     display: inline-block;
@@ -123,8 +125,78 @@ ul{
     color: #465366;
     font-size: 1.1rem;
     margin-left: 8%;
+    margin-bottom: 4rem;
 }
 .first-section figure figcaption{
     margin-top: 2em;
 }
 
+/*second-section*/
+.second-section{
+    width: 90%;
+    margin: 0 auto;
+}
+.second-section_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: space-between;
+}
+.second-section figure{
+    width:22%;
+    text-align: center;
+    font-family: "Open Sans Semi Bold";
+    color: #465366;
+    font-size: 1.8rem;
+    letter-spacing: 0.63px;
+    margin:0 0 2em 0;
+}
+.second-section_container figure:last-of-type{
+margin-right: 26%;
+}
+.second-section figure img{
+width: 100%;
+}
+.second-section figure figcaption{
+    margin-top: 1em;
+}
+
+/*third-section*/
+.third-section_container{
+    width: 50%;
+    margin: 0 auto;
+}
+.third-section_container input,textarea{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.9em;
+    margin-bottom: 1.2em;
+    font-family: "Roboto Regular";
+}
+input[type="checkbox"]{
+    display: inline;
+    width: auto;
+}
+.third-section_container label{
+    display: block;
+    width: 100%;
+}
+.third-section_container input[type="submit"]{
+    background-color:#4a90e2;
+    color:white;
+    border-radius: 6%;
+}
+.third-section_container a{
+    color:blue;
+    text-decoration: underline;
+}
+.third-section_container p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/*fours-section*/
+.fours-section{
+    background-color:#f7f8f9;
+}
