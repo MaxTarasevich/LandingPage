@@ -244,10 +244,30 @@ input[type="checkbox"]{
     border-radius: 2.5rem;
     margin-left: 7%;
 }
+
 /*footer*/
+
 .footer{
     max-width: 1440px;
     margin: 0 auto;
     background-color:#2c2c2c;
     color:#9fa3a7;
+
+}
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #ffffff;
+}
+.footer-section_logo{
+    width: 24%;
+}
+.footer-section_services{
+width: 35%;
+line-height: 2.57;
+}
+.footer-section_maintenance{
+    width: 21%;
 }
