@@ -79,26 +79,43 @@ ul{
     font-size:1.5rem ;
     color: #808080;
 }
+.header-menu_list li:hover{
+    color: #4a90e2;
+    transform: scale(1.1);
+    transition: 0.5s ease-in;
+}
 .header-menu_list li:last-of-type{
     color: #4a90e2;
 }
-.header-seach{
-    display:inline-block;
+.header-menu_list li:last-of-type:hover{
+    color: #808080;
+}
+.header-form_container{
     width: 65%;
+    margin: 15% auto 0;
+    position: relative;
+}
+.header-seach{
+   display: block;
+   width: 100%;
     padding: 10px;
     text-align: center;
     letter-spacing: 0.5px;
     line-height: 1.5;
     font-size:1.5rem ;
-    position: absolute;
-    top:50%;
-    left: 17%;
+   
 }
 .header-seach::placeholder{
     color:black;
     opacity: 0.7;
 }
-
+.header-seach_button::before{
+    content:url(/img/search.svg);
+    position: absolute;
+    top:15%;
+    right: 3%;
+    cursor: pointer;
+}
 
 
 /*main*/
@@ -252,21 +269,32 @@ input[type="checkbox"]{
     margin: 0 auto;
     background-color:#2c2c2c;
     color:#9fa3a7;
-
+    padding: 3.75rem;
 }
-.footer-section{
+
+.footer ul{
+    padding: 0;
+}
+.footer section{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #9fa3a7;
+}
+.footer section h4{
+    font-size: 1.13rem;
+    color: #ffffff;
+    text-align: left;
 }
 .footer-section_logo{
     width: 24%;
 }
 .footer-section_services{
+    columns: 2;
 width: 35%;
 line-height: 2.57;
+
 }
 .footer-section_maintenance{
     width: 21%;
