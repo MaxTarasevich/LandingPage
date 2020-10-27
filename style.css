@@ -240,6 +240,27 @@ input[type="checkbox"]{
     list-style: none;
     padding: 0;
 }
+.slider-item img{
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-item p{
+    display: none;
+    line-height: 2;
+}
+.activ p{
+    display: block;
+   
+}
+.activ img{
+    border-radius:5%;
+    transform: scale(1.5);
+    transition: 1s ease-in;
+}
+
 /*fifth-section*/
 .fifth-section{
     background-color: #4a90e2;
