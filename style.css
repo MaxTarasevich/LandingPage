@@ -69,8 +69,14 @@ figure:hover{
 .header-menu  .header-logo{
     max-width: 17%;
     margin-left: 80px;
+    
     cursor: pointer;
+    align-self: center;
 }
+.header-menu  img{
+   margin-bottom: 20px;
+}
+
 .header-menu  img:hover{
     transform: scale(1.1);
     transition: 2s ease-in-out;
