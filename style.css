@@ -276,7 +276,7 @@ input[type="checkbox"]{
 }
 .activ p{
     display: block;
-   
+    max-width: 15em;
 }
 .activ img{
     border-radius:5%;
@@ -326,6 +326,16 @@ input[type="checkbox"]{
 .footer ul{
     padding: 0;
 }
+.footer li>a:hover{
+   color:#4a90e2;
+   display: inline-block;
+   transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+.footer a>img:hover{
+    transform: scale(1.2);
+     transition: 0.4s ease-in;
+ }
 .footer section{
     display: flex;
     flex-wrap: wrap;
@@ -382,4 +392,47 @@ line-height: 2.57;
 }
 .footer-social li{
     padding-right: 2em;
+}
+
+
+/*Style for modal*/
+.modal-login{
+    max-width: 1440px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   background-color:rgba(74, 144, 226, 0.4);;
+}
+.modal-login_form{
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid #4a90e2;
+    padding: 5%;
+}
+.modal-login_form label{
+   display: block;
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 0.9em;
+   margin-bottom: 1.2em;
+   font-family: "Roboto Regular";
+}
+.modal-login_form  input{
+   display: block;
+   width: 100%;
+   font-size: 1rem;
+   padding: 0.9em;
+   margin-top: 1.2em;
+   font-family: "Roboto Regular";
+}
+#modal-login_submit{
+    border: 2px solid #4a90e2;
+    background-color:#9fa3a7;
+    color:white;
+    border-radius: 10%;
 }

@@ -15,3 +15,8 @@
             }
         })
     }
+    /**********************login*************************** */
+    let logIn = document.getElementById('login');
+    logIn.addEventListener('click',()=>{
+        console.log('login')
+    })
