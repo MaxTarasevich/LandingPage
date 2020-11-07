@@ -397,42 +397,69 @@ line-height: 2.57;
 
 /*Style for modal*/
 .modal-login{
-    max-width: 1440px;
+    width: 100%;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
-    top: 1rem;
-    left: 1rem;
     display: flex;
     justify-content: center;
     align-items:center;
-   background-color:rgba(74, 144, 226, 0.4);;
+   background-color:rgba(74, 144, 226, 0.4);
+   visibility:hidden;
 }
 .modal-login_form{
     width: 40%;
     margin: 0 auto;
+    background-color:rgba(74, 144, 226, 1);
     border: 2px solid #4a90e2;
+    box-shadow: 0px 0px 10px 5px rgba(74, 144, 226, 0.8);
     padding: 5%;
+    position: relative;
+}
+.close-modal{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: red;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+.close-modal:hover{
+    
+    transition: 0.5s ease-in;
 }
 .modal-login_form label{
    display: block;
    text-align: center;
    font-size: 1.5rem;
-   padding: 0.9em;
-   margin-bottom: 1.2em;
+   padding: 0.5em;
+   margin-bottom: 0.5em;
    font-family: "Roboto Regular";
 }
 .modal-login_form  input{
    display: block;
    width: 100%;
    font-size: 1rem;
-   padding: 0.9em;
-   margin-top: 1.2em;
+   padding: 0.5em;
+   margin-top: 0.5em;
+   border: 2px solid #4a90e2;
    font-family: "Roboto Regular";
+}
+.modal-login_form  input:focus{
+    box-shadow: 0px 0px 10px 2px rgba(163, 221, 197, 0.8);
 }
 #modal-login_submit{
     border: 2px solid #4a90e2;
-    background-color:#9fa3a7;
-    color:white;
+    background-color:white;
+    font-weight: 800;
     border-radius: 10%;
+    cursor: pointer;
+}
+#modal-login_submit:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease-out;
 }

@@ -17,6 +17,9 @@
     }
     /**********************login*************************** */
     let logIn = document.getElementById('login');
+    let modalLogin = document.getElementsByClassName('modal-login');
     logIn.addEventListener('click',()=>{
-        console.log('login')
+        console.log(modalLogin)
+        modalLogin.style.visibility = "visible"
+        
     })
