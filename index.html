@@ -22,6 +22,7 @@
     <li><a href="#">Maintenance</a></li>
     <li><a href="#">Cover</a></li>
     <li><a href="#" id="login">Login</a></li>
+    <li><a href="#" class="LogOut">LogOut</a></li>
 </ul>            
     </nav>
     <div class="header-form_container">
@@ -328,9 +329,9 @@
 
     </footer>
 <!--Modal-->
-<div class="modal-login">
-    <form action="#" class="modal-login_form">
-        <span class="close-modal">X</span>
+<div class="modal-login modal-login_open ">
+    <form action="" class="modal-login_form" onsubmit="return false">
+        <span id="close-modal">X</span>
         <label for="userName">
             Login
             <input type="text" name="userName" id="userName-login" placeholder="User name" required >
