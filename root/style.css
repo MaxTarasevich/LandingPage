@@ -1,25 +1,25 @@
 
 @font-face{
     font-family: "Open Sans";
- src: url("/fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"),
-        url("/fonts/Open_Sans/OpenSans-Regular.woff") format("woff");
+ src: url("./fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"),
+        url("./fonts/Open_Sans/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face{
     font-family: "MarketDeko";
- src: url("/fonts/Market_Deco.woff2") format("woff2"),
-        url("/fonts/MarketDeco.woff") format("woff");
+ src: url("./fonts/Market_Deco.woff2") format("woff2"),
+        url("./fonts/MarketDeco.woff") format("woff");
 }
 
 @font-face{
     font-family: "Open Sans Semi Bold";
- src: url("/fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2"),
-        url("/fonts/Open_Sans/OpenSans-SemiBold.woff") format("woff");
+ src: url("./fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2"),
+        url("./fonts/Open_Sans/OpenSans-SemiBold.woff") format("woff");
 }
 @font-face{
     font-family: "Roboto Regular";
- src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
-        url("/fonts/Roboto-Regular.woff") format("woff");
+ src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+        url("./fonts/Roboto-Regular.woff") format("woff");
 }
 
 
@@ -55,7 +55,7 @@ figure:hover{
 
 .header{
     max-width: 1440px;  
-    background-image: url(/img/Header-bg.jpg);
+    background-image: url(./img/Header-bg.jpg);
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ figure:hover{
     opacity: 0.7;
 }
 .header-seach_button::before{
-    content:url(/img/search.svg);
+    content:url(./img/search.svg);
     position: absolute;
     top:15%;
     right: 3%;
