@@ -55,7 +55,7 @@ figure:hover{
 
 .header{
     max-width: 1440px;  
-    background-image: url(./img/Header-bg.jpg);
+    background-image: url(./images/Header-bg.jpg);
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
